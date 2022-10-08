@@ -141,7 +141,7 @@ body {
 .nav-link:focus,
 .contact-link:hover,
 .contact-link:focus,
-.nav-list .nav-link.current {
+.current {
   color: var(--accent-color);
   fill: currentColor;
 }
@@ -163,7 +163,6 @@ body {
   margin-left: 50px;
 }
 
-/* SVG */
 .icon-letter,
 .icon-phone {
   margin-right: 10px;
@@ -201,8 +200,6 @@ body {
 }
 
 .button {
-  border-radius: 4px;
-  border: 0;
   padding: 10px 32px;
 
   font-family: inherit;
@@ -211,6 +208,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
+  border: 0;
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--main-bgd-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -248,7 +247,6 @@ body {
   margin-left: 30px;
 }
 
-/* SVG */
 .features-icon-box {
   display: flex;
   justify-content: center;
@@ -370,7 +368,6 @@ body {
   color: var(--primary-color);
 }
 
-/* SVG */
 .social-list {
   display: flex;
   padding-left: 32px;
@@ -407,7 +404,6 @@ body {
   display: flex;
 }
 
-/* SVG */
 .clients-link {
   display: flex;
   justify-content: center;
@@ -539,7 +535,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .footer-input {
@@ -579,11 +575,11 @@ body {
 
   letter-spacing: 0.06em;
 
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
 
@@ -611,16 +607,16 @@ body {
 
 .filter-btn {
   padding: 6px 22px;
-  border-radius: 4px;
-  border: none;
-
+  
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-
+  
+  border: none;
+  border-radius: 4px;
   background-color: var(--secondary-bgd-color);
   color: var(--main-color);
 
@@ -636,7 +632,6 @@ body {
 .filter-btn:focus,
 .filter-btn:active {
   border-radius: 4px;
-
   background-color: var(--accent-color);
   color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -648,7 +643,6 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-
   gap: 30px;
 }
 
@@ -668,6 +662,7 @@ body {
 
 .project-thumb {
   position: relative;
+  
   overflow: hidden;
 }
 
